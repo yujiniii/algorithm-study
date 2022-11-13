@@ -18,6 +18,6 @@ import sys
 input = sys.stdin.readline
 
 n = int(input())
-data = [input().strip() for i in range(n)]
+data = [input().rstrip() for i in range(n)]
 
 ```
