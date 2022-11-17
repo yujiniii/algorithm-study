@@ -3,6 +3,7 @@ from implementation import implementation_code
 from dfs_n_bfs import dfs_n_bfs_code
 from sorting import sorting_code
 from binary_search import binary_search_code
+from dynamic_programming import dynamic_programming_code
 
 
 # greedy_code.p87()
@@ -17,7 +18,7 @@ from binary_search import binary_search_code
 
 
 # dfs_n_bfs_code.p149()
-# dfs_n_bfs_code.p339()5
+# dfs_n_bfs_code.p339()5 
 
 # sorting_code.p178()
 # sorting_code.p180()
@@ -26,4 +27,8 @@ from binary_search import binary_search_code
 # binary_search_code.p197_ver01()
 # binary_search_code.p197_ver02()
 # binary_search_code.p197_ver03()
-binary_search_code.p201()
+# binary_search_code.p201()
+
+# dynamic_programming_code.p217()
+# dynamic_programming_code.p220()
+dynamic_programming_code.p223()
