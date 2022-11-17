@@ -65,4 +65,25 @@ def p197_ver03():
 
 def p201():
     # 7-3 떡볶이 떡 만들기
+    # 적어도 M 만큼의 떡을 얻기 위해 : 절단 후 남은 떡의 합이 m 이상
+    # 절단기 높이의 최댓값 : 최대한 많이 절단하기,
     # 원하는 조건을 만족하는 가장 알맞은 값을 찾는 문제 :  파라메트릭 서치
+    n, m = list(map(int, input().split(' ')))
+    array = list(map(int, input().split()))
+
+    start = 0
+    end = max(array)
+
+    result = 0
+    while start <= end:
+        total = 0
+        mid = (start+end)//2
+        for x in array:
+            if x > mid:
+                total += x - mid
+        if total < m:
+            end = mid - 1
+        else:
+            result = mid  # 덜 잘랐을떄(== 오른쪽 부분 탐색 시)
+            start = mid+1  # 그리고 다시 탐색 기기
+    print(result)
