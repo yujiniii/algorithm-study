@@ -34,3 +34,7 @@ import sys
 sys.setrecursionlimit(10 ** 6) # pypy에선 불가능
 
 ```
+## 무한 표현하기
+```python
+INF = int(1e9) # 1e9 : 10억 / python에서 실수형이라서 정수형으로 변환
+```
